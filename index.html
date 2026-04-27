@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emi Ayada</title>
+    <meta
+      name="description"
+      content="Emi Ayada — software & machine learning engineer based in Bellevue, WA. Co-founder/CTO at Sluicebox, previously Aurora, Uber, Outreach, Sony."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="intro">
+        <img
+          class="avatar"
+          src="profile.png"
+          alt="Emi Ayada"
+          width="120"
+          height="120"
+        />
+        <h1>Emi Ayada</h1>
+        <p class="tagline">
+          Engineering leader &amp; builder.
+        </p>
+        <p class="bio">
+          I like turning messy, ambiguous problems into real products and
+          teams that can keep shipping after I leave the room. Most recently
+          I was an ex-founder &amp; CTO building AI for sustainability —
+          measuring the carbon footprint of compute — where I took the
+          product from 0 → 1 and grew the engineering team from 0 → 1, with
+          an emphasis on scalability for both the system and the people in it.
+        </p>
+        <p class="bio">
+          Before that I spent a decade as an engineering leader and ML
+          engineer at <a href="https://aurora.tech/">Aurora</a> (autonomous
+          driving), <a href="https://www.uber.com/">Uber</a>,
+          <a href="https://www.outreach.io/">Outreach</a> (founding ML
+          engineer), and <a href="https://www.sony.com/">Sony</a> in Tokyo —
+          building distributed training pipelines, data platforms, and the
+          ML infrastructure underneath them. Outside of work I build small
+          web apps when an idea won't leave me alone.
+        </p>
+        <ul class="links">
+          <li><a href="mailto:e.ayada810004@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/emi-ayada/">LinkedIn</a></li>
+        </ul>
+      </header>
+
+      <section class="projects">
+        <h2>Things I've built</h2>
+
+        <article class="project">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="10" width="14" height="10" rx="2" />
+              <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+              <circle cx="12" cy="15" r="1.2" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>
+              <a href="https://kagura-murex.vercel.app/">Kagura</a>
+            </h3>
+            <p class="kind">Web app · End-to-end encrypted notes</p>
+            <p>
+              A private notes app that encrypts everything locally with
+              AES-256-GCM before it ever reaches the server. No email, no
+              identity check — just a username and password that never leaves
+              your device. Auto-locks after a configurable period of inactivity.
+            </p>
+            <p class="why">
+              Why: my notes hold the most private, sensitive parts of my life
+              — I wanted a place I could actually trust with them.
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 16a4 4 0 0 1 1-7.9 5 5 0 0 1 9.6-1.5A4 4 0 0 1 19 16H4z" />
+              <circle cx="17" cy="6" r="1.5" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>
+              <a href="https://skydays-rouge.vercel.app/">SkyDays</a>
+            </h3>
+            <p class="kind">Web app · Family activity planner</p>
+            <p>
+              A planning tool for parents and caregivers that answers
+              “where should I take my kid today?” — surfacing
+              kid-friendly activities and destinations nearby.
+            </p>
+            <p class="why">
+              Why: as a new mom, I kept struggling to find places nearby that
+              would actually entertain both my daughter and me.
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>
+              <a
+                href="https://chromewebstore.google.com/detail/acbkopgefjihlfhppafddifmhdfmbdka"
+                >Mindful Screen Time</a
+              >
+            </h3>
+            <p class="kind">Chrome extension · Intentional browsing</p>
+            <p>
+              A Chrome extension that adds a pause before distracting sites:
+              a daily timeline, visit counts, time spent, and a 7-day chart so
+              you can decide consciously instead of browsing on autopilot.
+              Tracks active time only, stores everything locally — no cloud,
+              no analytics.
+            </p>
+            <p class="why">
+              Why: my time is limited and I get distracted easily — I needed
+              something that would gently snap me back on track.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <p>© <span id="year"></span> Emi Ayada</p>
+      </footer>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

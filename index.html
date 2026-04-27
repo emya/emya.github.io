@@ -27,10 +27,11 @@
         <p class="bio">
           I like turning messy, ambiguous problems into real products and
           teams that can keep shipping after I leave the room. Most recently
-          I was an ex-founder &amp; CTO building AI for sustainability —
+          I was a founder &amp; CTO building AI for sustainability —
           measuring the carbon footprint of compute — where I took the
-          product from 0 → 1 and grew the engineering team from 0 → 1, with
-          an emphasis on scalability for both the system and the people in it.
+          product from 0 → 1 and built a 6-person international engineering
+          team from scratch, with an emphasis on scalability for both the
+          system and the people in it.
         </p>
         <p class="bio">
           Before that I spent a decade as an engineering leader and ML
@@ -42,72 +43,167 @@
           ML infrastructure underneath them. Outside of work I build small
           web apps when an idea won't leave me alone.
         </p>
+        <p class="contact-intro">
+          I'm always up for a conversation — about engineering leadership,
+          sustainability, AI products, side projects, or anything else you
+          think I'd find interesting. Reach me at:
+        </p>
         <ul class="links">
-          <li><a href="mailto:e.ayada810004@gmail.com">Email</a></li>
+          <li><a href="mailto:e.ayada810004@gmail.com">Email me</a></li>
           <li><a href="https://www.linkedin.com/in/emi-ayada/">LinkedIn</a></li>
         </ul>
       </header>
+
+      <section class="experience">
+        <h2>Things I've worked on</h2>
+
+        <div class="role-grid">
+          <article class="role">
+            <img
+              src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=450&fit=crop&q=80&auto=format"
+              alt="Server racks in a data center"
+              loading="lazy"
+            />
+            <div class="role-body">
+              <h3>AI for sustainability</h3>
+              <p>
+                Built a platform that measures the carbon footprint of compute
+                — from chips to data centers — including a domain-specific
+                fine-tuned LLM and an email agent for automated data
+                collection. Sold into hyperscalers; published the model
+                architecture at an international conference.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <img
+              src="https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?w=800&h=450&fit=crop&q=80&auto=format"
+              alt="Self-driving car sensor stack"
+              loading="lazy"
+            />
+            <div class="role-body">
+              <h3>
+                <a href="https://aurora.tech/">Aurora</a> · Autonomous driving
+              </h3>
+              <p>
+                Led the data &amp; annotation ML stack: a scalable annotation
+                workflow with quality scoring, an object-detection-based
+                validation framework that catches label defects pre-delivery,
+                Kubeflow pipelines for end-to-end ML lifecycle, and an
+                unsupervised visual search system over millions of driving
+                logs.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <img
+              src="https://images.unsplash.com/photo-1491921125492-f0b9c835b699?w=800&h=450&fit=crop&q=80&auto=format"
+              alt="Car driving on an open road"
+              loading="lazy"
+            />
+            <div class="role-body">
+              <h3>
+                <a href="https://www.uber.com/">Uber</a> · Autonomous driving
+              </h3>
+              <p>
+                Built a distributed multi-GPU training pipeline for DeepLab v3
+                with hyperparameter tuning and live monitoring, and a scalable
+                inference system on TensorFlow Serving. Published and
+                benchmarked computer vision models on AWS Marketplace.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop&q=80&auto=format"
+              alt="Analytics dashboard on a laptop screen"
+              loading="lazy"
+            />
+            <div class="role-body">
+              <h3>
+                <a href="https://www.outreach.io/">Outreach</a>
+              </h3>
+              <p>
+                Built the company's first ETL pipelines and data warehouse,
+                an intent classification model for prospect responses, and
+                ML-driven APIs surfacing content-effectiveness insights into
+                the core product. Automated A/B testing on Spark + Airflow.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <img
+              src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&h=450&fit=crop&q=80&auto=format"
+              alt="Tokyo street at night"
+              loading="lazy"
+            />
+            <div class="role-body">
+              <h3>
+                <a href="https://www.sony.com/">Sony</a> · Tokyo
+              </h3>
+              <p>
+                NLP and named-entity recognition features, recommendation
+                systems to reduce churn, and statistical analysis on user
+                behavior powering targeted advertising and segmentation.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <p class="credit">Photos via Unsplash.</p>
+      </section>
 
       <section class="projects">
         <h2>Things I've built</h2>
 
         <article class="project">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="5" y="10" width="14" height="10" rx="2" />
-              <path d="M8 10V7a4 4 0 0 1 8 0v3" />
-              <circle cx="12" cy="15" r="1.2" fill="currentColor" stroke="none" />
-            </svg>
-          </div>
+          <a class="project-shot" href="https://kagura-murex.vercel.app/">
+            <img src="kagura.png" alt="Kagura landing page" loading="lazy" />
+          </a>
           <div class="project-body">
             <h3>
               <a href="https://kagura-murex.vercel.app/">Kagura</a>
             </h3>
             <p class="kind">Web app · End-to-end encrypted notes</p>
             <p>
-              A private notes app that encrypts everything locally with
-              AES-256-GCM before it ever reaches the server. No email, no
-              identity check — just a username and password that never leaves
-              your device. Auto-locks after a configurable period of inactivity.
+              Notes encrypted in your browser before they ever reach the
+              server. Username and password only — no email, no identity check.
             </p>
             <p class="why">
-              Why: my notes hold the most private, sensitive parts of my life
-              — I wanted a place I could actually trust with them.
+              Why: I wanted a place I could actually trust with my most
+              private notes.
             </p>
           </div>
         </article>
 
         <article class="project">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 16a4 4 0 0 1 1-7.9 5 5 0 0 1 9.6-1.5A4 4 0 0 1 19 16H4z" />
-              <circle cx="17" cy="6" r="1.5" fill="currentColor" stroke="none" />
-            </svg>
-          </div>
+          <a class="project-shot" href="https://skydays-rouge.vercel.app/">
+            <img src="skydays.png" alt="SkyDays dashboard" loading="lazy" />
+          </a>
           <div class="project-body">
             <h3>
               <a href="https://skydays-rouge.vercel.app/">SkyDays</a>
             </h3>
             <p class="kind">Web app · Family activity planner</p>
             <p>
-              A planning tool for parents and caregivers that answers
-              “where should I take my kid today?” — surfacing
-              kid-friendly activities and destinations nearby.
+              A planner that answers “where should I take my kid today?” —
+              kid-friendly activities and destinations near you.
             </p>
             <p class="why">
-              Why: as a new mom, I kept struggling to find places nearby that
-              would actually entertain both my daughter and me.
+              Why: as a new mom, I struggled to find places that worked for
+              both of us.
             </p>
           </div>
         </article>
 
         <article class="project">
-          <div class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="9" />
-              <path d="M12 7v5l3 2" />
-            </svg>
-          </div>
+          <a class="project-shot" href="https://chromewebstore.google.com/detail/acbkopgefjihlfhppafddifmhdfmbdka">
+            <img src="mindful.png" alt="Mindful Screen Time overlay" loading="lazy" />
+          </a>
           <div class="project-body">
             <h3>
               <a
@@ -117,15 +213,12 @@
             </h3>
             <p class="kind">Chrome extension · Intentional browsing</p>
             <p>
-              A Chrome extension that adds a pause before distracting sites:
-              a daily timeline, visit counts, time spent, and a 7-day chart so
-              you can decide consciously instead of browsing on autopilot.
-              Tracks active time only, stores everything locally — no cloud,
-              no analytics.
+              A pause before distracting sites — today's timeline and a 7-day
+              chart let you decide instead of drifting. All local, no
+              analytics.
             </p>
             <p class="why">
-              Why: my time is limited and I get distracted easily — I needed
-              something that would gently snap me back on track.
+              Why: my time is limited and I get distracted easily.
             </p>
           </div>
         </article>

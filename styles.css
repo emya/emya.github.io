@@ -75,20 +75,23 @@ h3 {
   margin: 0 0 24px;
 }
 
+.contact-intro {
+  margin: 24px 0 12px;
+}
+
 .links {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 6px;
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   font-size: 0.95rem;
 }
 
 .intro {
-  margin-bottom: 64px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid var(--rule);
+  margin-bottom: 32px;
 }
 
 .avatar {
@@ -106,22 +109,53 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-top: 80px;
+  padding-top: 48px;
+  border-top: 1px solid var(--rule);
 }
 
 .project {
   background: var(--card);
   border: 1px solid var(--rule);
   border-radius: 8px;
-  padding: 24px 28px;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: 20px;
-  align-items: start;
-  transition: transform 0.15s ease, border-color 0.15s ease;
+  grid-template-columns: 1fr 280px;
+  align-items: stretch;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
 .project:hover {
   border-color: var(--accent);
+}
+
+.project-shot {
+  display: block;
+  background: var(--bg);
+  line-height: 0;
+  overflow: hidden;
+  order: 2;
+}
+
+.project-shot img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-shot:hover img {
+  transform: scale(1.02);
+}
+
+.project-body {
+  padding: 24px 28px 28px;
+  order: 1;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .project-body p {
@@ -132,37 +166,20 @@ h3 {
   margin-bottom: 0;
 }
 
-.icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
-  background: var(--bg);
-  border: 1px solid var(--rule);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent);
-  flex-shrink: 0;
-}
-
-.icon svg {
-  width: 26px;
-  height: 26px;
-}
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .project {
-    grid-template-columns: 40px 1fr;
-    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+  .project-shot {
+    order: 1;
+  }
+  .project-body {
+    order: 2;
     padding: 20px;
   }
-  .icon {
-    width: 40px;
-    height: 40px;
-  }
-  .icon svg {
-    width: 22px;
-    height: 22px;
+  .project-shot img {
+    height: 200px;
+    min-height: 0;
   }
 }
 
@@ -180,6 +197,72 @@ h3 {
   color: var(--muted);
   font-style: italic;
   font-size: 0.95rem;
+}
+
+.experience {
+  margin-top: 80px;
+  padding-top: 48px;
+  border-top: 1px solid var(--rule);
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.role {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.role:hover {
+  border-color: var(--accent);
+}
+
+.role img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.role-body {
+  padding: 20px 24px 24px;
+}
+
+.role-body h3 {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+}
+
+.role-body p {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.role-body p:last-child {
+  margin-bottom: 0;
+}
+
+.credit {
+  margin-top: 24px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .role-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 footer {
